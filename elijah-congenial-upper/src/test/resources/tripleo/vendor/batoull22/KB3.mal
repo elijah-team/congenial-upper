@@ -1,0 +1,18 @@
+;G →Q
+;L.M→P
+;P.A→Q
+;B.L→M
+;A.B→G
+;A
+;B
+;proof:Q
+
+(def rules [r]
+  (.rule r :G :Q)
+  (.rule2 r [:L :M] :P)
+  (.rule2 r [:P :A] :Q)
+  (.rule2 r [:B :L] :M)
+  (.rule2 r [:A :B] :G))
+
+(def solve [r]
+  (.solve r :Q [:A :B]))
