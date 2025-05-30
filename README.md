@@ -3,65 +3,33 @@ Elijah congenial-robot
 
 The elijah-lang compiler/package manager.
 
-Elijah is:
+`congenial-upper`:
 
-- ... a high-level language built to explore code generation and other interesting techniques.
-- ... a historical curiosity.
-- ... meant to be easy to use standalone or with existing projects.
-- ... free software (LGPL) intended for use on all systems, aka Linux.
-- ... philosophically opposed to semicolons.
-- ... obsessed with curly braces and brackets.
+Branch `2025-02-19`@37ffb5ebc2a821cc29a5c75bfde9509172cc1007 (25-04-28 1208xx):
 
-[`congenial-robot`][1] is:
+* Stateful (@ ...) (TODO do tck/animal-sniffer/etc)
+* org.jdeferred2
+* WorkManager with WorkJob_R (!)
+* tripleo.elijah.util. ...
+* tripleo.vendor.{antlr277,batoul22,romanqed,thinlet}
+* tripleo.{buffer,range}
 
-- ... implemented in Java (17, for now; 8 is great and Graal is your paal)
-- ... of the impression that [build systems don't matter][4] (tldr maven for now)
-- ... mortal enemies of Scala
-- ... a friend of Eclipse and therefore not Lombok (but only when it's not trying that hard)
-- ... a friend of Xtend
-- ... is not really all that concerned by Kotlin (see [Verification][3])
+from 'net':
 
-
-Instructions
--------------
-
-https://github.com/elijah-team/congenial-robot
-
-```shell
-##git clone https://github.com/elijah-team/congenial-robot -b 2024-congenial
-##jj git clone ...
-git clone https://git.sr.ht/~tripleo/el-kindof
-cd elijah-congenial-robot
-nix-shell -p maven jdk17_headless --pure --command "mvn clean test"
+```xml
+<dependency>
+    <groupId>tripleo.elijah</groupId>
+    <artifactId>congenial-robot</artifactId>
+    <version>congenial.2025-02-x</version>
+</dependency>
 ```
 
-GOALS
-------
+Jitpack:
 
-- Less noise
-- More verification
-  - on the road to correctness
-
-
-LINEAGE
---------
-
-`Septagon` - Starting over, again
-
-`Rosetta` - Encapsulating state/environment. Pull model.
-
-`Congenial` - Testability/verification
-
-
-TODO
------
-
-- Convert to ant
-- Finish vision
-- Stop fuddling
-
-
-[1]: https://github.com/elijah-team/congenial-robot
-[2]: https://gitlab.com/elijah-team/documentation/petal-to-the-medal/-/blob/main/ginitiatives/G8.md?ref_type=heads
-[3]: https://gitlab.com/elijah-team/documentation/petal-to-the-medal/-/blob/main/ginitiatives/G1.md?ref_type=heads 
- 
+```xml
+		<dependency>
+			<groupId>com.github.elijah-team</groupId>
+			<artifactId>congenial-upper</artifactId>
+			<version>3fe9f9565622c759429a7e9ae8a4ed30195b30cf</version>
+		</dependency>
+```
