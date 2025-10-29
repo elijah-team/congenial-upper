@@ -39,4 +39,4 @@ jobs:
         run: ./mvnw -B --file pom.xml package
 
       - name: (NOT REALLY) package with Maven
-        run: false ./mvnw -B --file pom.xml deploy 
+        run: true ./mvnw -B --file pom.xml deploy 
