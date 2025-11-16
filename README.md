@@ -28,11 +28,9 @@ Instructions
 https://github.com/elijah-team/congenial-robot
 
 ```shell
-##git clone https://github.com/elijah-team/congenial-robot -b 2024-congenial
-##jj git clone ...
-git clone https://git.sr.ht/~tripleo/el-kindof
-cd elijah-congenial-robot
-nix-shell -p maven jdk17_headless --pure --command "mvn clean test"
+git clone https://github.com/elijah-team/congenial-upper
+cd congenial-upper
+nix-shell -p jdk17_headless --pure --command "./mvnw clean test"
 ```
 
 GOALS
