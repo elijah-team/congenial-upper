@@ -7,7 +7,7 @@ import java.text.MessageFormat;
 
 public record EK_Fact(char ch) {
 	//@Override
-	// public boolean equals(final Object aO) {
+	//public boolean equals(final Object aO) {
 	//	if (this == aO) return true;
 	//	if (aO == null || getClass() != aO.getClass()) return false;
 	//	final EK_Fact ekFact = (EK_Fact) aO;
@@ -15,7 +15,7 @@ public record EK_Fact(char ch) {
 	//}
 	//
 	//@Override
-	// public int hashCode() {
+	//public int hashCode() {
 	//	return Objects.hash(ch);
 	//}
 

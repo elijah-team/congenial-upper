@@ -1,9 +1,7 @@
 package tripleo.vendor.batoull22;
 
 import org.jetbrains.annotations.NotNull;
-import tripleo.elijah.util.Operation2;
 
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -12,13 +10,13 @@ import java.util.Scanner;
  * @author batoul
  */
 public class EK_ExpertSystem {
-	public       EK_Fact             goal;
-	public       Scanner             input;
-	public final List<EK_Fact>       Listfacts = new ArrayList<>();
-	public final List<EK_Production> Listrule  = new ArrayList<>();
+	public       EK_Fact                  goal;
+	public       Scanner                  input;
+	public final List<EK_Fact>            Listfacts = new ArrayList<EK_Fact>();
+	public final ArrayList<EK_Production> Listrule  = new ArrayList<>();
 
-	// public static int countBackwardchaining=0;
-	// public static int countForwardchaining=0;
+	//public static int countBackwardchaining=0;
+	//public static int countForwardchaining=0;
 
 	void actualizeMerge(final EK_Production current_production, final @NotNull EK_Merge aEKMerge) {
 		Listfacts.add(aEKMerge.result());
@@ -61,7 +59,7 @@ public class EK_ExpertSystem {
 
 				if (m.result() == g) { // example A.B-->C
 					System.out.println("First case income : " + m.result());
-					// His right side fact
+					//His right side fact
 
 					final boolean hasFirst  = Listfacts.contains(m.first());
 					final boolean hasSecond = Listfacts.contains(m.second());
@@ -82,7 +80,7 @@ public class EK_ExpertSystem {
 					}
 					updateBackwardChaining(ep); // result.st()
 				}
-			}// end if (ch[4] == g)
+			}//end if (ch[4] == g)
 			else if (ep.isPush()) {
 				final EK_Push push = ep.getPush();
 
@@ -102,7 +100,7 @@ public class EK_ExpertSystem {
 					}
 				}
 			}
-		}// end for
+		}//end for
 
 	}// end chekBackwardchaining
 
@@ -140,27 +138,16 @@ public class EK_ExpertSystem {
 		}
 	}
 
-	public @NotNull Operation2<EK_Reader> openfile_2() {
-		try {
-			final InputStream stream = getClass().getResourceAsStream("KB3.txt");
-			assert stream != null;
-			return Operation2.success(new EK_Reader1(this, stream));
-		} catch (Exception ex) {
-			System.out.println("Error:the input file dose not exist");
-			return Operation2.failure(ex);
-		}
-	}
-
 	public void print() {
 		System.out.println("factlist:" + Listfacts);
 		System.out.println("rulelist:" + Listrule);
 		System.out.println("goal:" + goal);
 		System.out.println(" ");
-		// System.out.println( c);
-		// System.out.println( j);
+		//System.out.println( c);
+		//System.out.println( j);
 	}
 
-	// Interpretation of input
+	//Interpretation of input
 	public void proof(@NotNull String st) {
 		if (st.length() == 1) {
 			Listfacts.add(new EK_Fact(st.charAt(0)));

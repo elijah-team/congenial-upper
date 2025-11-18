@@ -14,7 +14,7 @@ record EK_Factarray(String st, EK_Fact[] ch) {
 		if (obj == null || obj.getClass() != this.getClass()) return false;
 		var that = (EK_Factarray) obj;
 		return Objects.equals(this.st, that.st) &&
-				Arrays.equals(this.ch, that.ch);
+                Arrays.equals(this.ch, that.ch);
 	}
 
 	@Override
