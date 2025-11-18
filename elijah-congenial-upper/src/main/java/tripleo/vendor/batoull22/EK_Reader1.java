@@ -27,21 +27,21 @@ final class EK_Reader1 implements EK_Reader {
 		System.out.println("rulelist:" + _system.Listrule);
 		System.out.println("goal:" + _system.goal);
 		System.out.println(" ");
-		// System.out.println( c);
-		// System.out.println( j);
+		//System.out.println( c);
+		//System.out.println( j);
 	}
 
 	@Override
 	public void readfile() {
-		// Read the line
+		//Read the line
 		while (input_.hasNext()) {
 			String a = input_.nextLine();
 
 			_system.proof(a);
 		}
-		// System.out.println("factlist:"+ Listfacts);
-		// System.out.println("goal:"+ goal);
-		// System.out.println( "rulelist:"+Listrule);
-		// System.out.println( " ");
+		//System.out.println("factlist:"+ Listfacts);
+		//System.out.println("goal:"+ goal);
+		//System.out.println( "rulelist:"+Listrule);
+		//System.out.println( " ");
 	}
 }
