@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+cp -a commit-msg-legacy ../.git/hooks/commit-msg
+rm ../.git/hooks/*sample # nit
+chmod +x ../.git/hooks/commit-msg
