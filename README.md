@@ -1,4 +1,4 @@
-Elijah congenial-robot
+Elijah congenial-upper
 =======================
 
 The elijah-lang compiler/package manager.
@@ -14,23 +14,20 @@ Elijah is:
 
 [`congenial-robot`][1] is:
 
-- ... implemented in Java (17, for now; 8 is great and Graal is your paal)
-- ... of the impression that [build systems don't matter][4] (tldr maven for now)
-- ... mortal enemies of Scala
-- ... a friend of Eclipse and therefore not Lombok (but only when it's not trying that hard)
-- ... a friend of Xtend
-- ... is not really all that concerned by Kotlin (see [Verification][3])
+- ... implemented in Java (17, for now; 21/graal25) and some Kotlin
+- ... built with maven (soon lein and or sbt)
 
 
 Instructions
 -------------
 
-https://github.com/elijah-team/congenial-robot
+https://github.com/elijah-team/congenial-upper
 
 ```shell
 git clone https://github.com/elijah-team/congenial-upper
 cd congenial-upper
-nix-shell -p jdk17_headless --pure --command "./mvnw clean test"
+(cd extra ; ./install-commit-msg )
+./mvnw install
 ```
 
 GOALS
@@ -54,12 +51,11 @@ LINEAGE
 TODO
 -----
 
-- Convert to ant
-- Finish vision
-- Stop fuddling
+- Make it work
+- Make it right
+- Fix bugs
 
 
 [1]: https://github.com/elijah-team/congenial-robot
 [2]: https://gitlab.com/elijah-team/documentation/petal-to-the-medal/-/blob/main/ginitiatives/G8.md?ref_type=heads
-[3]: https://gitlab.com/elijah-team/documentation/petal-to-the-medal/-/blob/main/ginitiatives/G1.md?ref_type=heads 
- 
+[3]: https://gitlab.com/elijah-team/documentation/petal-to-the-medal/-/blob/main/ginitiatives/G1.md?ref_type=heads
