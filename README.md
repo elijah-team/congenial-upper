@@ -1,7 +1,7 @@
 Elijah congenial-upper
 =======================
 
-The elijah-lang compiler/package manager.
+The elijah-lang compiler.
 
 Elijah is:
 
@@ -14,8 +14,8 @@ Elijah is:
 
 [`congenial-robot`][1] is:
 
-- ... implemented in Java (17, for now; 21/graal25) and some Kotlin
-- ... built with maven (soon lein and or sbt)
+- ... implemented in Java (17 is fine) and some Kotlin
+- ... built with maven
 
 
 Instructions
@@ -51,9 +51,9 @@ LINEAGE
 TODO
 -----
 
-- Make it work
-- Make it right
-- Fix bugs
+- Make it compile
+- Make it correct
+- Make it compliant
 
 
 [1]: https://github.com/elijah-team/congenial-robot
