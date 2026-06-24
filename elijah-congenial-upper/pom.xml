@@ -7,7 +7,7 @@
 
     <parent>
         <groupId>tripleo.elijah</groupId>
-        <artifactId>congenial-robot</artifactId>
+        <artifactId>congenial-upper-parent</artifactId>
         <version>congenial.2025-1118</version>
     </parent>
 

@@ -2,12 +2,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>tripleo.elijah</groupId>
-    <artifactId>congenial-robot</artifactId>
-    <packaging>pom</packaging>
-    <version>congenial.2025-1118</version>
+	<groupId>tripleo.elijah</groupId>
+	<artifactId>congenial-upper-parent</artifactId>
+	<packaging>pom</packaging>
+	<version>congenial.2025-1118</version>
 
-    <name>Elijah Congenial ROOT</name>
+	<name>Elijah Congenial UPPER Parent</name>
 
     <properties>
         <project.build.outputTimestamp>1</project.build.outputTimestamp>
